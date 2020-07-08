@@ -1,3 +1,48 @@
-h1 {
-  color: red;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+nav {
+  height: 54px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 5%; 
+  padding-right: 5%; 
+}
+
+.nav-img {
+  height: 23px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+
+  font-size: 12px;
+}
+
+.nav-links div a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-links div a:link, .nav-links div a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-links div a:hover, .nav-links div a:active {
+  border-bottom: solid 2px black;
+  padding-bottom: 1px;
 }
