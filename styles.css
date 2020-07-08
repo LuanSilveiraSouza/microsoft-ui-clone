@@ -5,6 +5,7 @@
   font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+/**NAVBAR**/
 nav {
   height: 54px;
   width: 100%;
@@ -45,4 +46,144 @@ nav {
 .nav-links div a:hover, .nav-links div a:active {
   border-bottom: solid 2px black;
   padding-bottom: 1px;
+}
+
+/**HEADER**/
+section {
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 70%;
+}
+
+
+.slider-btn {
+  position: absolute;
+  top: 40%;
+
+  border-radius: 50%;
+  border: 1px solid gray;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+}
+
+.slider-btn:hover {
+  box-shadow: 0 0 3px gray;
+}
+
+.show {
+  display: initial;
+}
+
+.hide {
+  display: none;
+}
+
+.slide-active {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section div img {
+  height: 100%;
+  width: 100%;
+}
+
+.slide1-content {
+  position: absolute;
+  bottom: 30%;
+
+  text-align: center;
+  color: white;
+}
+
+.slide1-content h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.slide1-content p {
+  margin-bottom: 30px;
+}
+
+.slide1-content a {
+  width: 150px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+
+  transition: all 1s;
+}
+
+.slide1-content a:link, .slide1-content a:visited {
+  text-decoration: none;
+}
+
+.slide1-content a:hover, .slide1-content a:active {
+  text-decoration: underline;
+  background-color: #e6e6e6;  
+}
+
+.slide2-content {
+  position: absolute;
+  bottom: 50%;
+  left: 10%;
+
+  text-align: justify;
+  color: black;
+}
+
+.slide2-content h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.slide2-content p {
+  margin-bottom: 30px;
+}
+
+.slide2-content a {
+  width: 150px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  font-weight: 500;
+  font-size: 16px;
+
+  transition: all 1s;
+}
+
+.slide2-content .link-black {
+  background-color: black;
+  color: white;
+}
+
+.slide2-content .link-transp {
+  background-color: transparent;
+  color: black;
+}
+
+.slide2-content a:link, .slide2-content a:visited {
+  text-decoration: none;
+}
+
+.slide2-content .link-black:hover, .slide2-content .link-black:active {
+  text-decoration: underline;
+  background-color: #1a1a1a;  
+}
+
+.slide2-content .link-transp:hover, .slide2-content .link-transp:active {
+  text-decoration: underline;
+  background-color: #e6e6e6;  
 }
