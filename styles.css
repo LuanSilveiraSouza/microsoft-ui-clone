@@ -193,6 +193,8 @@ section div img {
   margin-top: 5%;
   display: flex;
   justify-content: center;
+
+  height: auto;
 }
 
 .product-links a {
@@ -221,7 +223,150 @@ section div img {
   width: 40px;
 }
 
+/*CARDS*/
+.title {
+  margin: 3% 0 0 5%;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.cards {
+  height: auto;
+  margin: 3% 5% 5% 5%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards div {
+  width: 24%;
+}
+
+.cards div img {
+  height: auto;
+  width: 100%;
+}
+
+.cards div h3 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10%;
+}
+
+.cards div p {
+  font-size: 16px;
+  margin-bottom: 5%;
+}
+
+.cards div a {
+  color: #005DA6;
+}
+
+.cards div a:link, .cards div a:visited{
+  text-decoration: none;
+}
+
+.cards div a:hover, .cards div a:active{
+  text-decoration: underline;
+}
+
+/*SLIDE*/
+.slide-content img{
+  height: auto;
+  width: 100%;
+}
+
+.slide-content div{
+  position: relative;
+  bottom: 50%;
+
+  color: white;
+  text-align: center;
+}
+
+.slide-content div h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.slide-content div p {
+  margin-bottom: 30px;
+}
+
+.slide-content div a {
+  width: 150px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+
+  transition: all 1s;
+}
+
+.slide-content div a:link, .slide-content div a:visited {
+  text-decoration: none;
+}
+
+.slide-content div a:hover, .slide-content div a:active {
+  text-decoration: underline;
+  background-color: #e6e6e6;  
+}
+
 /*FOOTER*/
+section.footer-links {
+  height: 340px;
+  margin: 0;
+  padding: 0 5%; 
+
+  display: flex;
+  justify-content: space-between;
+}
+
+section.footer-links div {
+  padding: 3% 12px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: justify;
+  color: #616161;
+}
+
+section.footer-links div h4 {
+  font-weight: 600;
+}
+
+section.footer-links div a {
+  color: #616161;
+  font-size: 12px;
+
+  margin: 10px 0;
+}
+
+.footer-links {
+  background-color: #f2f2f2;
+}
+
+.footer-links a:link, .footer-links a:visited {
+  text-decoration: none;
+} 
+
+.footer-links a:hover, .footer-links a:active {
+  text-decoration: underline;
+  color: black;
+} 
+
+footer a:first-child{
+  display: flex;
+  flex-grow: 2;
+  align-items: center;
+}
+
 footer {
   width: 100%;
   height: 72px;
@@ -231,15 +376,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
-  background-color: #f2f2f2;
 }
 
-footer a:first-child{
-  display: flex;
-  flex-grow: 2;
-  align-items: center;
-}
 
 footer a:first-child i {
   font-size: 20px;
@@ -253,12 +391,3 @@ footer a {
   font-size: 11px;
   color: #616161;
 }
-
-footer a:link, footer a:visited {
-  text-decoration: none;
-} 
-
-footer a:hover, footer a:active {
-  text-decoration: underline;
-  color: black;
-} 
