@@ -317,6 +317,28 @@ section div img {
   background-color: #e6e6e6;  
 }
 
+/*SOCIAL MEDIA LINKS*/
+.social-media-links {
+  margin: 0 5% 3% 5%;
+  width: 20%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social-media-links span {
+  font-size: 14px;
+  color: #616161;
+  font-weight: 400;
+}
+
+.social-media-links a img{
+  height: 28px;
+  width: 28px;
+}
+
+
 /*FOOTER*/
 section.footer-links {
   height: 340px;
